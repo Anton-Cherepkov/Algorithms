@@ -11,7 +11,8 @@ int main() {
         s.insert(rand());
     }
     while (!s.empty()) {
-        std::cout << s.extract_max() << ", Elements left: " << s.size() << '\n';
+        std::cout << s.extract_max();
+	    std::cout << ", Elements left: " << s.size() << '\n';
     }
     
     return 0;
