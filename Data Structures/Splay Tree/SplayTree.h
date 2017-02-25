@@ -292,6 +292,10 @@ public:
         return _size;
     }
 
+    bool empty() const {
+        return !_size;
+    }
+
     void clear() {
         clear(_root);
         _root = nullptr;
