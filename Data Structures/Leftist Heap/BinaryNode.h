@@ -55,6 +55,7 @@ void setLeftChild(BinaryNode<T>* x, BinaryNode<T>* child) {
 template <class T>
 void setRightChild(BinaryNode<T>* x, BinaryNode<T>* child) {
     assert(x != nullptr);
+    x->distance = 1 + std::min(getDistance(x->leftChild), getDistance(x->rightChild));
     x->rightChild = child;
 }
 
